@@ -1,3 +1,5 @@
+// add this code to theme's functions.php
+
 function wpb_filter_query( $query, $error = true ) {
   if ( is_search() ) {
   $query->is_search = false;
